@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Back"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Our Team"
+        android:textSize="50sp" />
+
+
+    <ImageSwitcher
+        android:id="@+id/imgSw"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="200dp" />
+
+    <TextSwitcher
+        android:id="@+id/textSwitcher"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp" />
+
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSw"
+        android:layout_marginStart="100dp"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPrevious"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnPrevious"
+        android:text="Next" />
+
+</RelativeLayout>

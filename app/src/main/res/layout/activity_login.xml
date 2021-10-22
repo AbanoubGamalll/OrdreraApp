@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Back"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".FirstPage.Login_Activity">
+
+    <ImageView
+        android:id="@+id/imagebutton"
+        android:layout_width="245dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/Lemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ColorApp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/ColorApp"/>
+
+    <EditText
+        android:id="@+id/Lpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/ColorApp"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/ColorApp"/>
+
+    <CheckBox
+        android:id="@+id/cb_rememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Remember me"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account !"
+            android:textColor="#9C27B0" />
+    </LinearLayout>
+
+</LinearLayout>

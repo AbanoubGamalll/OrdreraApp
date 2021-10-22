@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Back"
+    android:padding="10dp"
+    android:scrollbars="none"
+    tools:context=".FirstPage.Registration_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RfirstName"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/ColorApp"
+                android:hint="Enter First Name"
+                android:inputType="text"
+                android:textColorHint="#ff9f43" />
+
+            <EditText
+                android:id="@+id/RlastName"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/ColorApp"
+                android:hint="Enter Last Name"
+                android:inputType="text"
+                android:textColorHint="#ff9f43" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/RemailAddress"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ColorApp"
+            android:gravity="center"
+            android:hint="Enter email Address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#ff9f43" />
+
+        <EditText
+            android:id="@+id/Rpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ColorApp"
+            android:gravity="center"
+
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColorHint="#ff9f43" />
+
+        <EditText
+            android:id="@+id/RchekPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ColorApp"
+
+            android:gravity="center"
+            android:hint="Enter password again"
+            android:inputType="textPassword"
+            android:textColorHint="#ff9f43" />
+
+        <EditText
+            android:id="@+id/Rphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ColorApp"
+            android:gravity="center"
+            android:hint="Enter Phone Number"
+
+            android:inputType="phone"
+            android:textColorHint="#ff9f43" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="156dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="BRegister"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</ScrollView>
